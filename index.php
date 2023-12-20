@@ -5,17 +5,20 @@ $APPLICATION->SetTitle('Bitrix Vue Component');
 
 <?php
 \Dbogdanoff\Bitrix\Vue::includeComponent([
+    'header'
     'block-header',
     'block-footer',
     'simple-block',
     'upload-photo',
     'carousel',
     'dbogdanoff-loader'
+    'section_1'
+    'section_2'
 ]);
 ?>
 
 <main id="app" v-cloak>
-  <block-header></block-header>
+  <header></header>
   <carousel></carousel>
   <simple-block add-class="p-5">
     <h5>Text block</h5>
